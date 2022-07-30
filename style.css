@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    border-bottom: 1px solid #E0E0E0;
+}
+header .container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+header nav{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+header .container div{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+main{
+    height: 90vh;
+    padding: 50px;
+}
+main img{
+    width: 100%;
+    height: 100%;
+}
+.tDesign{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+}
+.tDesign h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #1A1A1A;
+    width: 30%;
+}
+.tDesign p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #AAAAAA;
+    width: 50%;
+}
+.bDesign{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bDesign div{
+    width: 49%;
+    margin-bottom: 40px;
+}
+.bDesign div img{
+    width: 100%;
+}
+.bDesign div p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    color: #1A1A1A;
+}
+.brands h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #1A1A1A;
+}
+.brands p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #4A4A4A;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.brands .container div{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+.advantages h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #1A1A1A;
+    margin-top: 20vh;
+    margin-bottom: 10px;
+}
+.advantages .container>div{
+    display: flex;
+    justify-content: space-between;
+}
+.advantages .container>div div{
+    width: 30%;
+}
+.fon{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.fon>div{
+    width: 80%;
+    margin: 0 auto;
+}
+.advantages2 .container>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+.advantages2 .container>div img{
+    width: 60%;
+}
+.advantages2 .container>div div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu{
+    width: 36px;
+    display: none;
+}
+
+@media (max-width: 576px) {
+    header nav{
+        display: none;
+    }
+    header .container div{
+        display: none;
+    }
+    .menu{
+        display: inline-block;
+    }
+    .brands .container div{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 40px;
+        justify-items: center;
+    }
+    .brands .container div{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 30px;
+    }
+    main{
+        padding: 10px;
+        height: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+    .tDesign{
+          flex-direction: column;
+          margin-top:2vh;
+          margin-bottom:10vh; 
+          text-align: center;
+    }
+    .tDesign h1{
+        font-size: 32px;    
+        width: 100%;
+        line-height: 40px;
+    }
+    .tDesign p{
+        font-size: 18px;
+        width: 100%;
+        line-height: 30px;
+    }
+    .bDesign div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .brands h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .brands p{
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    .advantages h1{
+        text-align: center;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 8vh;
+    }
+    .advantages .container div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .advantages .container > div div{
+        width: 100%;
+        margin-top: 40px;
+    }.advantages .container > div div h2{
+        margin: 10px 0;
+    }
+    .fon{
+        text-align: center;
+        background-position: center;
+        color: white;
+        height: 60vh;
+        width: 100%;
+        margin: 5vh 0;
+    }
+    .advantages2 .container > div{
+        flex-direction: column;
+    }
+    .advantages2 .container>div div{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .advantages2 .container > div img{
+        width: 100%;
+    }
+    #order{
+        order: 1;
+    }
+}
